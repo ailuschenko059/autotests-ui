@@ -24,4 +24,4 @@ with sync_playwright() as playwright:
     dashboard_toolbar_alert = page.get_by_test_id('dashboard-toolbar-title-text')
     expect(dashboard_toolbar_alert).to_be_visible()
 
-    page.wait_for_timeout(3000)
+    page.wait_for_timeout(1000)
